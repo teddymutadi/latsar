@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Core Value of Harmonis</title>
-  <style>
+  
+	<style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -88,7 +89,18 @@
     .sidebar ul li a:hover {
       text-decoration: underline;
     }
-  </style>
+
+
+
+.slideshow-container { position: relative; max-width: 90%; }
+        .slides { display: none; width: 100%; transition: transform 0.5s ease; }
+        .active { display: block; }
+        .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; }
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev { left: 0; }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+  </style>\
+
 </head>
 <body>
   <header>
@@ -99,19 +111,51 @@
     </div>
   </header>
 
-  <main>
+ 
+ <main>
     <div class="content">
-      <h2>Apa Saja Nilai Dasar ASN yang Ada dalam BerAKHLAK?</h2>
-
+      <h2><font color="orange">Apa Saja Nilai Dasar ASN yang Ada dalam BerAKHLAK?</font></h2>
 
 <p>Aparatur Sipil Negara (ASN) merupakan sebutan profesi bagi Pegawai Negeri Sipil (PNS) dan pegawai pemerintah dengan perjanjian kerja (PPPK). Dalam melaksanakan tugas profesinya, ASN harus berpedoman pada Undang-Undang Republik Indonesia Nomor 15 Tahun 2014 tentang Aparatur Sipil Negara, yang telah mengalami sejumlah perubahan dalam UU ASN 2023.</p>
- 
+ <center>
+<div class="slideshow-container">
+   <img class="slides" src="https://teddymutadi.github.io/latsar/1.png" width="900" heigh="500" text="Foto+1" alt="Foto 1">
+    <img class="slides" src="https://teddymutadi.github.io/latsar/2.png" width="900" heigh="500" text="Foto+2" alt="Foto 2">
+    <img class="slides" src="https://teddymutadi.github.io/latsar/3.png" width="900" heigh="500" text="Foto+3" alt="Foto 3">
+    <img class="slides" src="https://teddymutadi.github.io/latsar/4.png" width="900" heigh="500" text="Foto+4" alt="Foto 4">
+    <img class="slides" src="https://teddymutadi.github.io/latsar/5.png" width="900" heigh="500" text="Foto+5" alt="Foto 5">
+    <img class="slides" src="https://teddymutadi.github.io/latsar/6.png" width="900" heigh="500" text="Foto+6" alt="Foto 6">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+</center>
+
+<script>
+    let slideIndex = 0;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+        showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+        let slides = document.getElementsByClassName("slides");
+        if (n >= slides.length) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length - 1 }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+    }
+</script>
+
+
 <p>Dalam Pasal 3 disebutkan, ASN sebagai profesi harus memegang sejumlah prinsip. Salah satunya yakni nilai dasar ASN. Di samping itu, ASN juga mesti berpegang teguh pada kode etik dan kode perilaku; komitmen, integritas moral, dan tanggung jawab pada pelayanan publik; serta profesionalitas jabatan.</p>
 <p>Sebagai tindak lanjut dari regulasi tersebut, Presiden Joko Widodo (Jokowi) meluncurkan nilai-nilai dasar atau core values ASN “BerAKHLAK” dengan semboyan “Bangga Melayani Bangsa” pada 27 Juli 2021, dilansir situs web resmi Sekretariat Kabinet Republik Indonesia.</p>
 
 <p>Peluncuran core values ASN “BerAKHLAK” tersebut bertujuan menyeragamkan nilai-nilai dasar ASN yang dipandang masih sangat bervariasi di setiap instansi pemerintah pusat maupun daerah, termasuk tiap unit kerja.</p>
 
-<h2>Nilai-nilai Dasar ASN</h2>
+<h2><font color="orange">Nilai-nilai Dasar ASN</font></h2>
 <p>Core value ASN BerAKHLAK merupakan turunan dari UU ASN Nomor 15 Tahun 2014 yang termuat dalam Pasal 4. Bahwa, nilai-nilai dasar ASN harus dijadikan sebagai prinsip dalam menjalankan profesinya.</p>
 
 <p>Berikut ini 15 nilai dasar ASN yang harus dipegang sebagai prinsip oleh pegawai pemerintah:</p>
@@ -132,7 +176,7 @@
 <li>mendorong kesetaraan dalam pekerjaan; </li>
 <li>meningkatkan efektivitas sistem pemerintahan yang demokratis sebagai perangkat sistem karier. </li>
 </ol>
-<h2>Apa Saja Core Values ASN BerAKHLAK?</h2>
+<h2><font color="orange">Apa Saja Core Values ASN BerAKHLAK?</font></h2>
 <p>15 nilai dasar ASN yang disebutkan di atas kemudian dirangkum menjadi 7 core values ASN BerAKHLAK (Berorientasi pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, dan Kolaboratif.</p>
 <p>Melansir dari Buku Saku Panduan Perilaku Core Values Badan Kepegawain Negara (2022), isi core values atau nilai-nilai dasar ASN yang harus dipahami serta dijadikan pedoman dalam menjalankan profesi meliputi:</p>
 <h3>1. Berorientasi pelayanan</h3>
