@@ -1,24 +1,13 @@
 import streamlit as st
 
-st.title("📊 Kalkulator Nilai Rata-rata Peserta Didik")
+st.title("📐 Kalkulator Luas Persegi Panjang")
 
-st.write("Masukkan nilai untuk setiap mata pelajaran, lalu tekan tombol hitung.")
+# Input panjang dan lebar
+panjang = st.number_input("Masukkan panjang (cm):", min_value=0.0, step=0.1)
+lebar = st.number_input("Masukkan lebar (cm):", min_value=0.0, step=0.1)
 
-# Input nilai
-mtk = st.number_input("Nilai Matematika", min_value=0.0, max_value=100.0, step=0.1)
-bindo = st.number_input("Nilai Bahasa Indonesia", min_value=0.0, max_value=100.0, step=0.1)
-bing = st.number_input("Nilai Bahasa Inggris", min_value=0.0, max_value=100.0, step=0.1)
-ipa = st.number_input("Nilai IPA", min_value=0.0, max_value=100.0, step=0.1)
-ips = st.number_input("Nilai IPS", min_value=0.0, max_value=100.0, step=0.1)
-
-if st.button("Hitung Rata-rata"):
-    rata = (mtk + bindo + bing + ipa + ips) / 5
-    st.write(f"**Rata-rata Nilai:** {rata:.2f}")
-
-    # Kategori kelulusan
-    if rata >= 75:
-        st.success("✅ Lulus - Nilai Anda sangat baik!")
-    elif rata >= 60:
-        st.warning("⚠️ Lulus Bersyarat - Perlu peningkatan.")
-    else:
-        st.error("❌ Tidak Lulus - Tetap semangat belajar!")
+# Hitung luas
+if st.button("Hitung Luas"):
+    luas = panjang * lebar
+    st.success(f"Luas persegi panjang adalah: {luas} cm²")
+    st.write("👉 Rumus: **Luas = Panjang × Lebar**")
